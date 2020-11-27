@@ -9,7 +9,7 @@ if ($_SESSION["userType"] == 'admin'){
     <meta name="description" content="sign up page for IMM News Network">
     <meta name="keywords" content="HTML, PHP, IMM, News, Network">
     <meta name="author" content="Alana Dahwoon Lee">
-    <title>signup page</title>
+    <title>View Submissions</title>
 </head>
 <body>
     <h2>Contact Submissions</h2>   
@@ -21,16 +21,13 @@ if ($_SESSION["userType"] == 'admin'){
     $stmt = $pdo->prepare("SELECT * FROM `contactsubmission`");
 
     $stmt->execute();
-    while ($row = $stmt->fetch(PDO::FETCH_ASSOC)){
-        echo("<p>");?>
-        <label>ID: </label><?php echo($row["submissionId"]);?><br/>
-        <label>Name: </label><?php echo($row["name"]);?><br/>
-        <label>EmailAddress: </label><?php echo($row["emailAddress"]);?><br/>
-        <label>Interests: </label><?php echo($row["interests"]);?><br/>
-        <label>Role: </label><?php echo($row["userRole"]);
-        echo("</p>");
-    }
+
+
+    while ($results = $stmt->fetch(PDO::FETCH_ASSOC));
+    $json = json_encode($results);
+    echo($json);  
 ?>
+
 </body>
 </html>
 <?php
