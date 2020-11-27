@@ -1,9 +1,9 @@
-let submitDataEl = document.querySelectorAll("#submit-data")[0];
+let submitDataEl = document.getElementById("#submit-data");
 
-let name = document.querySelectorAll("#name")[0];
-let emailAddress = document.querySelectorAll("#emailAddress");
-let interests = document.querySelectorAll("#interests")[0];
-let userRole = document.querySelectorAll("#user-option")[0];
+let name = document.getElementById("#name");
+let emailAddress = document.getElementById("#emailAddress");
+let interests = document.getElementById("#interests");
+let userRole = document.getElementById("#userRole");
 
 submitDataEl.addEventListener("click", submitDataEv, false);
 
@@ -18,11 +18,14 @@ function submitDataEv(event){
            } 
     };
     
+    const requestData = 'name=${form.name.value}&email=${form.emailAddress.value}&userRoles=${form.roles.value}';
+
+
     xhr.open("POST", "process-contact-form.php", true); 
     //true means it is asynchronous 
     // Send variables through the url
     xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-    xhr.send("name="+name.value&"emailAddress"+emailAddress.value&"interests"+interests.value&"userRole"+userRole.value);
+    xhr.send(requestData);
 }
 
 
@@ -52,19 +55,12 @@ xhr.onreadystatechange = function(e){
         //show in html page
         responseDataEl.appendChild(pTag);
 
-            }
         }
     }
+}
     
     xhr.open("GET", "contact-form.php", true); //true=asynchronus
     xhr.send();
 }
 
 
-//~~~~~~~~~~~~~~~table js~~~~~~~~~~~~~~~~//
-let tableMonthEl = document.getElementById("#month");
-let tableVisitorsEl = document.getElementById("#visitors");
-let tableTitleEl = document.getElementById("#table-title");
-
-let month_array = ["April","May","June","July","August","September"];
-let visitor_array = [16,80,36,44,7,8];

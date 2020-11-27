@@ -17,6 +17,7 @@ include("includes/standardheader.html");
 <h1>CONTACT US</h1>
 
 <div id ="contact-form">
+<form id="form">
     Name: <input type ="text" id= "name" name ="name" required><br/>
     <br/>
     Email Address: <input type = "email" id="emailAddress" name ="emailAddress" required><br/>
@@ -35,6 +36,7 @@ include("includes/standardheader.html");
     <br/>
     <br/> 
     <input type = "submit" id="submit-data" value="Submit">
+<form>
 </div>
 
     <section id="submission-data">
@@ -43,5 +45,6 @@ include("includes/standardheader.html");
     </section>
 
 <script src= "main.js"></script>
+<script scr= "table.js"></script>
 </body>
 </html>
