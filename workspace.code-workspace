@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\javascript"
+		},
+		{
+			"path": "..\\ajax"
+		},
+		{
+			"path": "..\\dom"
+		}
+	],
+	"settings": {}
+}

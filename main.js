@@ -1,13 +1,15 @@
-let submitDataEl = document.getElementById("#submit-data");
-
-let name = document.getElementById("#name");
-let emailAddress = document.getElementById("#emailAddress");
-let interests = document.getElementById("#interests");
-let userRole = document.getElementById("#userRole");
+let submitDataEl = document.querySelectorAll("#submit-data")[0];
+let form = document.querySelectorAll("#form")[0];
+let name = document.querySelectorAll("#name")[0];
+let emailAddress = document.querySelectorAll("#emailAddress")[0];
+let interests = document.querySelectorAll("#interests")[0];
+let userRole = document.querySelectorAll("#userRole")[0];
+let message = document.querySelectorAll("#message")[0];
 
 submitDataEl.addEventListener("click", submitDataEv, false);
 
 function submitDataEv(event){
+    event.preventDefault();
     console.log(name.value); //see if function is working ;)
 
     var xhr = new XMLHttpRequest(); 
@@ -16,11 +18,15 @@ function submitDataEv(event){
         if(xhr.readyState === 4){        
             console.log("CHECK DB TABLE");// modify or populate html elements based on response.
            } 
+        //DOM manipulation
+        form.remove();
+        message.innerHTML="THANK YOU!!";
+        submitDataEl.removeEventListener("click", submitDataEv, false);
+
+
+
     };
-    
-    const requestData = 'name=${form.name.value}&email=${form.emailAddress.value}&userRoles=${form.roles.value}';
-
-
+    var requestData = `name=${name.value} & emailAddress=${emailAddress.value} & userRole=${userRole.value}`;
     xhr.open("POST", "process-contact-form.php", true); 
     //true means it is asynchronous 
     // Send variables through the url

@@ -17,6 +17,7 @@ include("includes/standardheader.html");
 <h1>CONTACT US</h1>
 
 <div id ="contact-form">
+    <p id="message"></p>
 <form id="form">
     Name: <input type ="text" id= "name" name ="name" required><br/>
     <br/>
@@ -35,7 +36,7 @@ include("includes/standardheader.html");
     </select>
     <br/>
     <br/> 
-    <input type = "submit" id="submit-data" value="Submit">
+    <button type = "submit" id="submit-data" value="Submit">SUBMIT</button>
 <form>
 </div>
 
