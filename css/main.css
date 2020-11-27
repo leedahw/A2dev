@@ -11,8 +11,7 @@ body,html{
 }
 
 body {    
-    background-image: url("../imgs/map.png");
-    background-color:grey;
+    background-color:white;
     background-size:cover;
     background-repeat: repeat-y;
     position:absolute;
@@ -30,7 +29,6 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: white;
     list-style-type: none;
     margin:0px;
 }
@@ -40,7 +38,6 @@ body {
 #footer{
     z-index: 1;
     position:static;
-    background-color: white;
     padding-top: 1rem;
     padding-bottom: 0.5rem;
     padding-left:1rem;
@@ -59,7 +56,6 @@ img{
 }
 
 h1 {
-    color:black;
     font-size: 1.5em; 
     font-weight: 900;
     padding-left:2rem;
@@ -67,7 +63,6 @@ h1 {
 }
 
 h2{
-    color:black;
     font-weight: 700;
     font-size: 1.5em;
     padding-left:2rem; 
@@ -88,7 +83,6 @@ nav {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background-color: white;
 
     margin:0px; /*do not erase*/   
 
@@ -149,7 +143,6 @@ a#viewContact{
     padding-right:1rem;
     padding-top:.5rem;
     padding-bottom:.5rem;
-    background-color: white;
 }
 
 
@@ -179,14 +172,12 @@ section.#article{
 section#singleArticle{
     width:90%;
     margin:auto;
-    background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 section.title {
-    background-color:white;
     padding-top: 2rem;
     padding-bottom:4rem;
     
@@ -198,7 +189,6 @@ section.title {
 }
 
 section#articleTop{
-    background-color: white;
     display:flex;
     align-items: center;
     justify-content: space-between;
@@ -248,7 +238,6 @@ a:link{
     font-size: 1em;
     font-weight: 700;
     text-decoration: none;
-    color:black;
 }
 
 .externalLink{padding-left:2rem;}
@@ -271,7 +260,6 @@ section.featuredArticle {
     display:flex;
     flex-direction:column;
     font-size: 1.25em;
-    background-color: white;
     background-image:50%;
     padding-top:30px;
     padding-bottom:30px;
@@ -323,11 +311,6 @@ p#featuredArticleDetail {
 
 }
 
-#industryAuthor,#industryLabel{
-    background-color: white;
-}
-
-
 #careerAuthor,#careerLabel{
     background-color: purple;
     color: white;
@@ -343,7 +326,6 @@ p#featuredArticleDetail {
 }
 
 .IndivArticle{
-    background-color:white; 
     margin-bottom: 2rem;
     padding:2%;
     display:flex;
