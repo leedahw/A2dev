@@ -39,7 +39,7 @@ include("includes/standardheader.html");
     </form>
 </div>
 
-    <section id="person-data">
+    <section id="submission-data">
 
 
     </section>
