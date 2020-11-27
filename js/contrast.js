@@ -52,3 +52,47 @@ contrastButton.ondblclick= function constrastOff(){
         document.body.style.letterSpacing="";
 
 }
+
+
+//define key up function
+function doc_keyUp(e) {
+    //keycode a = 65
+    //ctrl = 16
+    // this would test for whichever key is 65 and the ctrl key at the same time
+    if (e.ctrlKey && e.keyCode == 65) {
+        // call your function to do the thing
+        assistOff();
+    }
+}
+
+document.addEventListener("keyUp", doc_keyUp, false);
+function assistOff() {
+    document.body.style.backgroundImage="url('./imgs/map.png')";
+    document.body.style.backgroundColor="";  
+    document.body.style.color="";
+    document.body.style.fontSize="";
+    document.body.style.lineHeight="";
+    document.body.style.letterSpacing="";
+};
+
+//define key up function
+function doc_keyDown(e) {
+    //keycode a = 65
+    //ctrl = 16
+    // this would test for whichever key is 65 and the ctrl key at the same time
+    if (e.ctrlKey && e.keyCode == 65) {
+        // call your function to do the thing
+        assistFunc();
+    }
+}
+
+document.addEventListener("keyDown", doc_keyDown, false);
+function assistFunc(){
+    document.body.style.backgroundImage = "none";
+    document.body.style.backgroundColor="#FFF";
+    document.body.style.color= "blue";
+    document.body.style.fontSize= "24px";
+    document.body.style.lineHeight= "2rem";
+    document.body.style.letterSpacing= ".1rem";
+};
+
