@@ -169,6 +169,6 @@ while ($row = $stmt->fetch(PDO:: FETCH_ASSOC)){
 <?php include('includes/cookies.html');?>
 </footer>
 
-<script src="main.js"></script>
+<script src="cookies.js"></script>
 </body>
 </html>
