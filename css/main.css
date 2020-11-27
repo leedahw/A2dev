@@ -11,6 +11,7 @@ body,html{
 }
 
 body {    
+    background-image: url("../imgs/map.png");
     background-color:white;
     background-size:cover;
     background-repeat: repeat-y;
@@ -147,6 +148,7 @@ a#viewContact{
 
 
 section.article {
+    background-color:white;
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
@@ -255,6 +257,7 @@ a:hover{
 }
 
 section.featuredArticle {
+    background-color:white;
     position:relative;
     height: 80vh;
     display:flex;
@@ -326,6 +329,7 @@ p#featuredArticleDetail {
 }
 
 .IndivArticle{
+    background-color:white;
     margin-bottom: 2rem;
     padding:2%;
     display:flex;
