@@ -8,8 +8,6 @@ $str = implode("," , $_POST['interests']);
 $userRole = $_POST["userRole"];
 
 
-
-
 //this part adds a new user to the 'contactsubmission' table
 include('includes/dbconfig.php');
 
@@ -20,5 +18,3 @@ VALUES (NULL, '$name', '$emailAddress', '$str', '$userRole');"
 
 $stmt->execute();
 ?>
-<p>Thank you. We'll be in touch!</p>
-<a href = "homepage.php">Back to Home</a>

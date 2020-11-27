@@ -17,7 +17,6 @@ include("includes/standardheader.html");
 <h1>CONTACT US</h1>
 
 <div id ="contact-form">
-    <form action = "process-contact-form.php" method = "POST" enctype="multipart/form-data">
     Name: <input type ="text" id= "name" name ="name" required><br/>
     <br/>
     Email Address: <input type = "email" id="emailAddress" name ="emailAddress" required><br/>
@@ -29,14 +28,13 @@ include("includes/standardheader.html");
     <br/>
     Your Role: <br/>
     <select name="userRole" id="userRole">
-        <option id="user-option" value = "writer">Writer</option>
-        <option id="user-option" value = "contributor">Contributor</option>
-        <option id="user-option" value = "administrator">Administrator</option>
+        <option id="userRole" value = "writer">Writer</option>
+        <option id="userRole" value = "contributor">Contributor</option>
+        <option id="userRole" value = "administrator">Administrator</option>
     </select>
     <br/>
     <br/> 
     <input type = "submit" id="submit-data" value="Submit">
-    </form>
 </div>
 
     <section id="submission-data">
@@ -44,6 +42,6 @@ include("includes/standardheader.html");
 
     </section>
 
-<script src= "contact.js"></script>
+<script src= "main.js"></script>
 </body>
 </html>

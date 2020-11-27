@@ -8,12 +8,22 @@ let userRole = document.querySelectorAll("#user-option")[0];
 submitDataEl.addEventListener("click", submitDataEv, false);
 
 function submitDataEv(event){
-    console.log("let's submit!"); //see if function is working ;)
+    console.log(name.value); //see if function is working ;)
+
+    var xhr = new XMLHttpRequest(); 
+    xhr.onreadystatechange = function(e){     
+        console.log(xhr.readyState);     
+        if(xhr.readyState === 4){        
+            console.log("CHECK DB TABLE");// modify or populate html elements based on response.
+           } 
+    };
     
+    xhr.open("POST", "process-contact-form.php", true); 
+    //true means it is asynchronous 
+    // Send variables through the url
+    xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+    xhr.send("name="+name.value&"emailAddress"+emailAddress.value&"interests"+interests.value&"userRole"+userRole.value);
 }
-
-
-
 
 
 function showDataEv(event){
@@ -49,3 +59,12 @@ xhr.onreadystatechange = function(e){
     xhr.open("GET", "contact-form.php", true); //true=asynchronus
     xhr.send();
 }
+
+
+//~~~~~~~~~~~~~~~table js~~~~~~~~~~~~~~~~//
+let tableMonthEl = document.getElementById("#month");
+let tableVisitorsEl = document.getElementById("#visitors");
+let tableTitleEl = document.getElementById("#table-title");
+
+let month_array = ["April","May","June","July","August","September"];
+let visitor_array = [16,80,36,44,7,8];

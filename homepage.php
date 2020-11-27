@@ -148,20 +148,20 @@ while ($row = $stmt->fetch(PDO:: FETCH_ASSOC)){
 <section class= "table" id= "visitorTable">
 <table>
     <tr>
-        <th class= "table" id= "tableHeading">Monthly Visitors: <th/>
-        <th class= "table" id= "tableHeading">October -</th>
-        <td class= "table" id= "tableitem">17</td>
-        <th class= "table" id= "tableHeading">September -</th>
-        <td class= "table" id= "tableitem">30</td>
-        <th class= "table" id= "tableHeading">August -</th>
-        <td class= "table" id= "tableitem">7</td>
-        <th class= "table" id= "tableHeading">July -</th>
-        <td class= "table" id= "tableitem">58</td>
-        <th class= "table" id= "tableHeading">June -</th>
-        <td class= "table" id= "tableitem">22</td>
-        <th class= "table" id= "tableHeading">May -</th>
-        <td class= "table" id= "tableitem">31</td>
-    <tr/>
+        <th id="table-title"></th>
+        <th id="month"></th>
+            <td id="visitors"></td>
+        <th id="month"></th>
+            <td id="visitors"></td>
+        <th id="month"></th>
+            <td id="visitors"></td>
+        <th id="month"></th>
+            <td id="visitors"></td>
+        <th id="month"></th>
+            <td id="visitors"></td>
+        <th id="month"></th>
+            <td id="visitors"></td>
+    </tr>
 </table>
 </section>
 
@@ -169,6 +169,6 @@ while ($row = $stmt->fetch(PDO:: FETCH_ASSOC)){
 <?php include('includes/cookies.html');?>
 </footer>
 
-<!--<script src="homepage.js"></script>-->
+<script src="main.js"></script>
 </body>
 </html>
