@@ -11,7 +11,8 @@ let visitors = [16,80,36,44,7,8];
 for (i=0; i<visitors.length; i++){
 tds[i].innerHTML=visitors[i];
 
-    for(i=0;i<months.length;i++){
-        ths[i].innerHTML=months[i];
-    }
+}
+
+for(i=0;i<months.length;i++){
+    ths[i].innerHTML=months[i];
 }

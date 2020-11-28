@@ -1,5 +1,4 @@
  //~~~~~~~~~~~~~~~~keycode~~~~~~~~~~~~~~~~~~//
-
 //define key up function
 function doc_keyDown(e) {
     //keycode a = 65

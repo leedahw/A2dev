@@ -157,7 +157,7 @@ while ($row = $stmt->fetch(PDO:: FETCH_ASSOC)){
 <div class= "table">
 <table id="visitorTable">
     <tr>
-        <th id= "tableTitle"><th/>
+        <h3 id= "tableTitle"></h3>
         <th></th>
             <td></td>
         <th></th>
