@@ -158,19 +158,19 @@ while ($row = $stmt->fetch(PDO:: FETCH_ASSOC)){
 <table id="visitorTable">
     <tr>
         <th id= "tableTitle"><th/>
-        <th class= "table" id= "tableHeading">October -</th>
-        <td class= "table" id= "tableitem">17</td>
-        <th class= "table" id= "tableHeading">September -</th>
-        <td class= "table" id= "tableitem">30</td>
-        <th class= "table" id= "tableHeading">August -</th>
-        <td class= "table" id= "tableitem">7</td>
-        <th class= "table" id= "tableHeading">July -</th>
-        <td class= "table" id= "tableitem">58</td>
-        <th class= "table" id= "tableHeading">June -</th>
-        <td class= "table" id= "tableitem">22</td>
-        <th class= "table" id= "tableHeading">May -</th>
-        <td class= "table" id= "tableitem">31</td>
-    <tr/>
+        <th></th>
+            <td></td>
+        <th></th>
+            <td></td>
+        <th></th>
+            <td></td>
+        <th></th>
+            <td></td>
+        <th></th>
+            <td></td>
+        <th></th>
+            <td></td>
+    </tr>
 </table>
 </div>
 
