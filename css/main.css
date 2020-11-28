@@ -180,6 +180,7 @@ section#singleArticle{
 }
 
 section.title {
+    background-color: white;
     padding-top: 2rem;
     padding-bottom:4rem;
     

@@ -154,10 +154,10 @@ while ($row = $stmt->fetch(PDO:: FETCH_ASSOC)){
 
 </section>
 
-<div class= "table" id= "visitorTable">
-<table>
+<div class= "table">
+<table id="visitorTable">
     <tr>
-        <th class= "table" id= "tableHeading">Monthly Visitors: <th/>
+        <th id= "tableTitle"><th/>
         <th class= "table" id= "tableHeading">October -</th>
         <td class= "table" id= "tableitem">17</td>
         <th class= "table" id= "tableHeading">September -</th>

@@ -1,6 +1,8 @@
 //~~~~~~~~~~~~~~~table js~~~~~~~~~~~~~~~~//
-let tds = document.getElementsByTagName("td");
-let tableTitleEl = document.getElementById("#table-title");
+let tableTIle = document.getElementById("tableTitle");
+tableTitle.innerHTML="Monthly Visitors";
+
+let tds= document.getElementsByTagName("td");
 
 let months = ["April","May","June","July","August","September"];
 let visitors = [16,80,36,44,7,8];
