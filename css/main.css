@@ -1,26 +1,4 @@
-<link rel= "main.css" href="https://fonts.gstatic.com">;
-<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700;900&display=swap" rel="stylesheet">;
-
 .fakeElement{ /*need this to show all styles*/
-}
-
-body,html{
-    max-width:100%;
-    font-family: 'Mulish', sans-serif;
-    font-size:16px;
-}
-
-body {    
-    background-image: url("../imgs/map.png");
-    background-color:white;
-    background-size:cover;
-    background-repeat: repeat-y;
-    position:absolute;
-    margin: 0px;
-    width:100%;
-    display: flex;
-    flex-direction: column;
-    
 }
 
 #header {
@@ -30,6 +8,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: white;
     list-style-type: none;
     margin:0px;
 }
@@ -39,10 +18,33 @@ body {
 #footer{
     z-index: 1;
     position:static;
+    background-color: white;
     padding-top: 1rem;
     padding-bottom: 0.5rem;
     padding-left:1rem;
 
+}
+
+
+
+
+body,html{
+    max-width:100%;
+    font-family: 'Mulish', sans-serif;
+    font-size:16px;
+}
+
+body {    
+    background-image: url("../imgs/map.png");
+    background-color:grey;
+    background-size:cover;
+    background-repeat: repeat-y;
+    position:absolute;
+    margin: 0px;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    
 }
 
 button{
@@ -57,6 +59,7 @@ img{
 }
 
 h1 {
+    color:black;
     font-size: 1.5em; 
     font-weight: 900;
     padding-left:2rem;
@@ -64,15 +67,19 @@ h1 {
 }
 
 h2{
+    color:black;
     font-weight: 700;
     font-size: 1.5em;
     padding-left:2rem; 
 }
 
-
-
 h3{
     font-size:1.5em;
+}
+
+h4 {
+    font-size: 2em;
+    font-weight: 700;
 }
 
 p{
@@ -84,6 +91,7 @@ nav {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    background-color: white;
 
     margin:0px; /*do not erase*/   
 
@@ -108,11 +116,6 @@ nav {
 
 }
 
-img#logo{
-    width:100%;
-    height:auto;
-    justify-content: center;
-}
 
 img.articleimg{
     width:100%;
@@ -125,10 +128,7 @@ img.articleimg{
     padding-left: 0;
 }
 
-#homepage{
-    display:flex;
-    justify-content: center;
-}
+
 
 #articlenav{
     width:33%;
@@ -144,11 +144,11 @@ a#viewContact{
     padding-right:1rem;
     padding-top:.5rem;
     padding-bottom:.5rem;
+    background-color: white;
 }
 
 
 section.article {
-    background-color:white;
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
@@ -174,28 +174,31 @@ section.#article{
 section#singleArticle{
     width:90%;
     margin:auto;
+    background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 section.title {
-    background-color: white;
+    background-color:white;
     padding-top: 2rem;
     padding-bottom:4rem;
     
 }
 
+.table {
+    width:50vw;
 
-.table#tableitem,.table#tableHeading{
-    width:50%;
 }
 
 section#articleTop{
+    background-color: white;
     display:flex;
     align-items: center;
     justify-content: space-between;
 }
+
 
 #addArticle{
     padding-right:2rem;
@@ -230,6 +233,8 @@ section#articleTop{
 }
 
 #techArticle,#industryArticle,#careerArticle{
+    border: solid grey;
+    border-width: 2px;
     width:33%;
     display: flex;
     justify-content: flex-start;
@@ -241,6 +246,7 @@ a:link{
     font-size: 1em;
     font-weight: 700;
     text-decoration: none;
+    color:black;
 }
 
 .externalLink{padding-left:2rem;}
@@ -248,7 +254,7 @@ a:link{
 a:visited{
     font-weight: 300;
     text-decoration: none;
-    color: grey;
+    color: black;
 }
 
 a:hover{
@@ -258,17 +264,20 @@ a:hover{
 }
 
 section.featuredArticle {
-    background-color:white;
-    position:relative;
+    position: relative;
     height: 80vh;
     display:flex;
     flex-direction:column;
     font-size: 1.25em;
+    background-color: white;
     background-image:50%;
-    padding-top:30px;
-    padding-bottom:30px;
+    padding-top:2rem;
+    padding-bottom:2rem;
     margin-bottom: 3rem;
-    overflow:hidden;
+}
+
+#message{
+    padding-left: 2rem;
 }
 
 p#featuredArticleDetail {
@@ -282,6 +291,7 @@ p#featuredArticleDetail {
 }
 
 #featuredArticleHeading {
+    margin-top:0;
     font-size: 1.5rem;
     font-weight: 700;
 }
@@ -315,23 +325,30 @@ p#featuredArticleDetail {
 
 }
 
+#industryAuthor,#industryLabel{
+    background-color: white;
+}
+
+
 #careerAuthor,#careerLabel{
     background-color: purple;
     color: white;
 }
 
-#mainArticleheading{
-
-
-}
-
 #aboutText{
     margin-left:2rem;
+    margin-bottom:1rem;
+}
+
+#text {
+    padding:1rem;
 }
 
 .IndivArticle{
-    background-color:white;
+    background-color:white; 
     margin-bottom: 2rem;
+    margin-left:auto;
+    margin-right:auto;
     padding:2%;
     display:flex;
     justify-content: center;
@@ -355,16 +372,17 @@ body{
     line-height: 2rem;
 }
 
-img#logo {
-    width:20%;
-    height:auto;
+h4 {
+    font-size: .6em;
+    font-weight: 700;
+    margin-top: 40px;;
 }
 
 section.article {
     margin:0;
 }
 
-.IndivArticle{
+.indivArticle{
     width:95%;
     margin:0;
     margin-left:auto;
@@ -396,6 +414,10 @@ section.featuredArticle {
 #articleDetails {
     margin-left:5%;
     margin-right:5%;
+}
+
+section#header {
+    height:50%;
 }
 
 }
